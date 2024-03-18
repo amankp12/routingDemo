@@ -1,20 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Movies from './movies/Movies'
-import Counter from './counter/Counter'
 
 const Header = () => {
   return (
-    <Header>
+    <div>
         <nav>
-            <button>
-                <Link to='/'>Counter</Link>
-            </button>
-            <button>
-                <Link to='/Movies'>Movies</Link>
-            </button>
+            <li>
+                <button>
+                    <Link to='/accordion'>Accordion</Link>
+                </button>
+                <button>
+                    <Link to='/bg-color-changer'>Background Color Changer</Link>
+                </button>
+                <button>
+                    <Link to='/todo'>Todo List</Link>
+                </button>
+                <button>
+                    <Link to='/ue'>useEffect Demo</Link>
+                </button>
+                <button>
+                    <Link to='/counter'>Counter</Link>
+                </button>
+            </li>
         </nav>
-    </Header>
+      
+    </div>
   )
 }
 
